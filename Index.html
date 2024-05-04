@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+<!-- DEVELOPER: Dhruvin Rana, IS117-006, Spring 2024 -->
 
 <head>
     <meta charset="UTF-8">
@@ -31,18 +32,15 @@
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
+                    <!-- Dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                           data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Projects
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="projects.html">All Projects</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Link 1</a>
-                            <a class="dropdown-item" href="#">Link 2</a>
-                            <a class="dropdown-item" href="#">Link 3</a>
-                            <a class="dropdown-item" href="#">Link 4</a>
+                            <a class="dropdown-item" href="projects.html">Project 1</a>
+                            <a class="dropdown-item" href="#">Project 2</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -57,14 +55,14 @@
     </nav>
 
     <!-- Home Section -->
-    <section id="home" class="py-5">
+    <section id="home" class="py-5 text-center">
         <div class="container">
             <div class="container-pic">
                 <img src="/images/Profile.png" alt="Dhruvin Rana profile picture" />
                 <div class="intro-text">
                     <h1 class="display-4">Hi, I'm Dhruvin Rana </h1>
-                    <p class="lead">This is my official portfolio website to showcase all details and work experience.
-                    </p>
+                    <p class="lead">This is my official portfolio website to showcase all details and work experience. </p>
+                    <a href="about.html" class="btn btn-primary btn-lg">Learn More</a>
                 </div>
             </div>
         </div>

@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- DEVELOPER: Dhruvin Rana, IS117-006, Spring 2024 -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhruvin Rana</title>
+    <title>Dhruvin Rana - Web Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" sizes="15x15" href="favacon.png">
+    <link rel="icon" type="image/png" sizes="15x15" href="images/favacon.png">
 </head>
 
 <body>
@@ -29,8 +30,16 @@
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</a>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                           data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Projects
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="projects.html">Project 1</a>
+                            <a class="dropdown-item" href="#">Project 2</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="resume.html">Resume</a>
@@ -44,11 +53,47 @@
     </nav>
 
     <!-- About Section -->
-    <section id="about" class="py-5">
+    <section id="about" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center">About Me</h2>
-            <p class="lead text-center">I am a passionate web developer with experience in HTML, CSS, JavaScript, and
-                Bootstrap.</p>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <h2 class="text-center">About Me</h2>
+                    <p class="lead text-center">I am a passionate web developer with experience in HTML, CSS,
+                        JavaScript, and Bootstrap. I love creating beautiful and functional websites that enhance the
+                        user experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <h2 class="text-center">Skills</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fab fa-html5"></i> HTML
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fab fa-css3-alt"></i> CSS
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fab fa-js"></i> JavaScript
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fab fa-bootstrap"></i> Bootstrap
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-mobile-alt"></i> Responsive Design
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-wheelchair"></i> Web Accessibility
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 

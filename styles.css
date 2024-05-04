@@ -5,12 +5,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(250, 245, 245);
+    background: url('/images/background.avif') no-repeat center center fixed;
+    background-size: cover;
 }
+
 
 /* Navbar */
 .navbar-custom {
-    background-color: white !important;
+    background-color: white ;
 }
 
 .navbar-custom .navbar-nav .nav-link {
@@ -19,8 +21,8 @@ body {
 
 /* Footer */
 .footer-custom {
-    background-color: white !important;
-    color: black !important;
+    background-color: white;
+    color: black ;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -37,41 +39,76 @@ body {
     margin-right: 20px;
 }
 
-
-@media (max-width: 767px) {
-    .footer-custom {
-        position: fixed; /* Remove fixed positioning on smaller screens */
-    }
-
-    .navbar-toggler {
-        color: black; /* Set color of the toggle button */
-    }
-
-    .navbar-collapse {
-        background-color: white; /* Set background color for navbar collapse */
-        position: absolute;
-        top: 56px; /* Adjust as needed to avoid overlapping with other content */
-        left: 0;
-        right: 0;
-        z-index: 99; /* Ensure navbar is above other content */
-    }
-
-    .navbar-nav {
-        flex-direction: column; /* Arrange navbar items vertically on small screens */
-    }
-
-    .navbar-nav .nav-item {
-        margin-bottom: 10px; /* Add space between navbar items on small screens */
-    }
-
-    .container-pic {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .container-pic img {
-        margin-bottom: 20px;
-    }
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
+/* Add hover effect for skills */
+.list-group-item:hover {
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+
+.list-group-item {
+    opacity: 0.9; 
+    text-align: center; 
+    width: auto !important;
+    display: inline-block !important;
+}
+
+/* Make container smaller */
+.container-skill {
+    max-width: 900px; 
+    margin: auto;
+}
+
+.navbar-toggler {
+    background-color: #07407d; 
+}
+
+.navbar-toggler-icon {
+    color: #fef8f8; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-r {
+    float: center;
+    justify-content: center;
+    align-items: center;
+    background: #0e0e0e78;
+    color: #f8f9fa;
+    padding-bottom: 50px;
+}
+
+#personal-info {
+    padding-right: 300px;
+    float: left ;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact h2 {
+    color: #333;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.social i {
+    font-size: 25px;
+    color: #343a40;
+    padding:  10px;
+}
+
+.social i:hover {
+    color: #007bff;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
